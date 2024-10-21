@@ -15,8 +15,8 @@ async function getWeather(city) {
 
     const temperature = data.main.temp;
     const description = data.weather[0].description;
-    const iconCode = data.weather[0].icon; // Get the icon code
-    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; // Construct the icon URL
+    const iconCode = data.weather[0].icon; 
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; 
 
     const weatherInfo = document.getElementById('weather-info');
     weatherInfo.innerHTML = `
@@ -54,8 +54,8 @@ async function getLocationWeather() {
 
         const temperature = data.main.temp;
         const description = data.weather[0].description;
-        const iconCode = data.weather[0].icon; // Get the icon code
-        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; // Construct the icon URL
+        const iconCode = data.weather[0].icon; 
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
         const weatherInfo = document.getElementById('weather-info');
         weatherInfo.innerHTML = `
